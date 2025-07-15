@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shoes Store </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Shoes Store Management</h1>
+
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-panel">
+      <div class="category-buttons">
+        <button class="tab-button active" onclick="filterShoes('Men')">Men</button>
+        <button class="tab-button" onclick="filterShoes('Women')">Women</button>
+      </div>
+
+      <label>Sale Ends At:</label>
+      <input type="datetime-local" id="saleEndDate" />
+
+      <div id="shoeList" class="shoe-list">
+        <!-- Shoes will appear here dynamically -->
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-panel">
+      <h2>Add / Update Shoes</h2>
+      <input type="text" id="shoeName" placeholder="Shoe Name" />
+      <input type="number" id="shoePrice" placeholder="Price (₹)" />
+      <select id="shoeCategory">
+        <option value="Men">Men</option>
+        <option value="Women">Women</option>
+      </select>
+      <input type="file" id="shoeImage" />
+      <div class="action-buttons">
+        <button class="add-btn" onclick="addShoe()">Add Shoe</button>
+        <button class="update-btn" onclick="updateShoe()">Update</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html> 

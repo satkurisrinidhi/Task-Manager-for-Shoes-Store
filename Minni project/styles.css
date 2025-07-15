@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f5f9;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.left-panel,
+.right-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+.category-buttons {
+  margin-bottom: 10px;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 4px;
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.shoe-list {
+  margin-top: 20px;
+}
+
+.shoe-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.shoe-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.add-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.update-btn {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 6px;
+}
+
+.edit-btn {
+  background-color: #f0ad4e;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+}
